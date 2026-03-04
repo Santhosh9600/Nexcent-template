@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</head>
+
+<style>
+  * {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+  }
+
+
+  .logo {
+    margin-left: 150px;
+    margin-top: -33px;
+  }
+
+  #icon {
+    margin-left: 120px;
+    width: 30px;
+    margin-top: 19px;
+  }
+
+  #register {
+    width: 180px;
+    height: 50px;
+    margin-right: 80px;
+  }
+
+  .hero-box {
+    display: flex;
+  }
+
+  /* Hero */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 20px;
+    background-color: #fdfdfd;
+  }
+
+  .hero-text h1 {
+    margin-left: 30px;
+    font-size: 70px;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+
+  .hero-text h1 span {
+    color: green;
+  }
+
+  .hero-text p {
+    margin-left: 30px;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 21px;
+    width: 890px;
+  }
+
+  #btn-hero {
+    width: 150px;
+    height: 60px;
+    margin-left: 60px;
+  }
+
+  .load-img img {
+    margin-top: -120px;
+    margin-left: 800px;
+    width: 90px;
+    height: 20px;
+  }
+
+  .our-client h1 {
+    text-align: center;
+    font-size: 38px;
+  }
+
+  .our-client p {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .clients-icon img {
+    margin-top: 30px;
+    width: 120px;
+    height: 80px;
+    margin-left: 110px;
+  }
+
+
+  .Manage-contant {
+    margin-top: 90px;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+
+  .card {
+    margin-top: 60px;
+    border: solid 2px #fff;
+    padding: 25px;
+    height: 350px;
+    width: 400px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 15px #ccc;
+  }
+
+  .card img {
+    margin-left: 150px;
+  }
+
+  .card h1,
+  p {
+    text-align: center;
+  }
+
+  .Pixelgrade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 20px;
+    background-color: #fdfdfd;
+  }
+
+  .sign img {
+    width: 750px;
+    height: 400px;
+  }
+
+  .sign-text h1 {
+    text-align: justify;
+  }
+
+  .sign-text p {
+    margin-top: 20px;
+    text-align: justify;
+    width: 800px;
+    margin-right: 50px;
+  }
+
+  .sign-text button {
+    margin-top: 20px;
+    width: 150px;
+    height: 60px;
+  }
+
+  .Helping {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: #ccc;
+  }
+
+  .Helping-text span {
+    color: green;
+  }
+
+  .Member img {
+    width: 50px;
+    height: 40px;
+  }
+
+  .Member-1 img {
+    width: 50px;
+    height: 40px;
+  }
+
+
+  .footer-like {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 20px;
+    background-color: #fdfdfd;
+  }
+
+  .lock img {
+    width: 750px;
+    height: 400px;
+  }
+
+  .lock-text h1 {
+    text-align: justify;
+  }
+
+  .lock-text p {
+    margin-top: 20px;
+    text-align: justify;
+    width: 800px;
+    margin-right: 50px;
+  }
+
+  .lock-text button {
+    margin-top: 20px;
+    width: 150px;
+    height: 60px;
+  }
+
+
+
+  .Tim-smit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 20px;
+    background-color: #ccc;
+    height: 420px;
+  }
+
+  .Tim-img img {
+    width: 450px;
+    height: 330px;
+    margin-left: 120px;
+  }
+
+  .Tim-text h5 {
+    text-align: justify;
+  }
+
+  .Tim-text p {
+    margin-top: 20px;
+    text-align: justify;
+    width: 800px;
+    margin-right: 50px;
+  }
+
+  .lock-text button {
+    margin-top: 20px;
+    width: 150px;
+    height: 60px;
+  }
+
+  .clients-icon2 h5 span {
+    color: green;
+  }
+
+
+  .blog-section {
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .blog-section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .subtitle {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    color: #777;
+    font-size: 15px;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .section-header h2 {
+    font-size: 2.2rem;
+    color: #4D4D4D;
+    margin-bottom: 15px;
+  }
+
+  .section-header p {
+    color: #717171;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    line-height: 1.6;
+  }
+
+
+  .blog-grid {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .blog-card {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    margin-bottom: 80px;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .card-content {
+    background: #F5F7FA;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    width: 85%;
+    margin: -60px auto 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .card-content h3 {
+    font-size: 1.1rem;
+    color: #717171;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+
+  .read-more {
+    color: #4CAF4F;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: inline-block;
+  }
+
+  .read-more:hover {
+    color: #388E3C;
+  }
+
+  .cta-section {
+    background-color: #F5F7FA;
+    padding: 80px 20px;
+    text-align: center;
+  }
+
+  .cta-section h1 {
+    color: #263238;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 32px;
+  }
+
+
+  .btn-demo {
+    background-color: #1B5E20;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-demo:hover {
+    background-color: #2E7D32;
+  }
+
+
+
+  .main-footer {
+    background-color: #263238;
+    color: #F5F7FA;
+    padding: 60px 0;
+  }
+
+
+  .footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .footer-col h4 {
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+  }
+
+  .footer-col ul {
+    list-style: none;
+  }
+
+  .footer-col ul li {
+    margin-bottom: 12px;
+  }
+
+  .footer-col ul li a {
+    color: #F5F7FA;
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+
+  .brand-col .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  .logo span {
+    margin-left: -140px;
+    margin-top: 30px;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  .brand-col p {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    opacity: 0.8;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+
+  .social-icons a {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  /* Newsletter Input */
+  .newsletter {
+    position: relative;
+  }
+
+  .newsletter input {
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    width: 320px;
+  }
+
+  .newsletter button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+
+
+   @media (max-width:550px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero-text h1 {
+      font-size: 50px;
+      text-align: center;
+      margin-left: -120px;
+    }
+
+    .hero-text p {
+      text-align: center;
+      font-size: 19px;
+      width: 420px;
+      margin-left: -120px;
+    }
+
+    #btn-hero
+    {
+      margin-left: -120px;
+    }
+
+    .hero-image img {
+      margin-top: 70px;
+      width: 450px;
+      height: 320px;
+    }
+
+    .load-img img {
+      display: none;
+    }
+
+    .cards {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .Pixelgrade {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .sign img {
+      width: 500px;
+      height: 400px;
+    }
+
+    .sign-text {
+      margin-top: 40px;
+    }
+
+    .sign-text h1 {
+      width: 120px;
+
+    }
+
+    #sign-p
+    {
+    width: 400px;
+   margin-left: 120px
+    }
+    
+
+    .Helping {
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .Helping-text2 {
+      margin-top: 40px;
+    }
+
+    .Helping-text3 {
+      margin-top: 40px;
+    }
+
+    .market {
+      display: flex;
+    }
+
+    .footer-like {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .lock img {
+      width: 500px;
+      height: 400px;
+    }
+
+    .lock-text {
+      margin-top: 30px;
+    }
+
+    .lock-text h1 {
+      text-align: center;
+    }
+
+    #lock-text-p
+    {
+      width: 400px;
+   margin-left: 120px
+    }
+
+    .Tim-smit {
+      flex-direction: column;
+      text-align: center;
+      height: 950px;
+      width: 480px;
+    }
+
+    .Tim-img img {
+      width: 300px;
+      height: 400px;
+    }
+
+    #Tim-text-p
+    {
+      width: 420px;
+     margin-left: 40px;
+    }
+
+    .Tim-text h5 {
+      display: none;
+    }
+  } 
+  
+  
+  @media(max-width:1250px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      
+    }
+
+    .hero-text h1 {
+      font-size: 50px;
+      text-align: center;
+       margin-left: -120px;
+    }
+
+    .hero-text p {
+      text-align: center;
+      font-size: 19px;
+      width: 420px;
+       margin-left: -120px;
+    }
+
+      #btn-hero
+    {
+      margin-left: -120px;
+    }
+
+    .hero-image img {
+      margin-top: 70px;
+      width: 450px;
+      height: 320px;
+    }
+
+    .load-img img {
+      display: none;
+    }
+
+    .cards {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .Pixelgrade {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .sign img {
+      width: 500px;
+      height: 400px;
+    }
+
+    .sign-text {
+      margin-top: 40px;
+    }
+
+    .sign-text h1 {
+      text-align: center;
+    }
+
+    #sign-p
+    {
+    width: 400px;
+   margin-left: 120px
+    }
+
+    .Helping {
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .Helping-text2 {
+      margin-top: 40px;
+    }
+
+    .Helping-text3 {
+      margin-top: 40px;
+    }
+
+    .market {
+      display: flex;
+    }
+
+    .footer-like {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .lock img {
+      width: 500px;
+      height: 400px;
+    }
+
+    .lock-text {
+      margin-top: 30px;
+    }
+
+    .lock-text h1 {
+      text-align: center;
+    }
+
+    #lock-text-p
+    {
+      width: 400px;
+   margin-left: 120px
+    }
+
+    .Tim-smit {
+      flex-direction: column;
+      text-align: center;
+      height: 950px;
+    }
+
+    .Tim-img img {
+      margin-left: -120px;
+      margin-top: -120px;
+      width: 300px;
+      height: 400px;
+    }
+
+    #Tim-text-p
+    {
+      width: 420px;
+     margin-left: 40px;
+    }
+
+    .Tim-text h5 {
+      display: none;
+    }
+  }
+
+
+  @media(max-width:1310px) {
+
+    .hero-text h1 {
+      font-size: 50px;
+    }
+
+    .hero-text p {
+      font-size: 19px;
+      width: 420px;
+    }
+
+    .hero-image img {
+      margin-top: 70px;
+      width: 450px;
+      height: 320px;
+    }
+
+    .load-img img {
+      display: none;
+    }
+
+    .sign-text {
+      margin-top: 40px;
+      margin-left: -120px;
+    }
+
+    .Helping-text2 {
+      margin-top: 40px;
+    }
+
+    .Helping-text3 {
+      margin-top: 40px;
+    }
+
+
+    .lock img {
+      width: 500px;
+      height: 400px;
+    }
+
+    .lock-text {
+      margin-top: 30px;
+      margin-left: -120px;
+    }
+
+
+    .Tim-img img {
+     margin-left: -120px;
+    }
+
+    .Tim-text p {
+      margin-top: 30px;
+      width: 320px;
+    }
+
+    .Tim-text h5 {
+      display: none;
+    }
+  }
+
+  @media(max-width:1420px) {
+
+    .hero-text h1 {
+      font-size: 50px;
+      text-align: center;
+    }
+
+    .hero-text p {
+      text-align: center;
+      font-size: 19px;
+      width: 420px;
+    }
+
+    .hero-image img {
+      margin-top: 70px;
+      width: 450px;
+      height: 320px;
+    }
+
+    .load-img img {
+      display: none;
+    }
+
+
+    .sign img {
+      margin-left: -100px;
+    }
+
+    .sign-text {
+      margin-top: 40px;
+    }
+
+    .Helping-text2 {
+      margin-top: 40px;
+    }
+
+    .Helping-text3 {
+      margin-top: 40px;
+    }
+
+
+    .lock img {
+     margin-left: -100px;
+    }
+
+    .lock-text {
+      margin-top: 30px;
+    }
+
+
+
+    .Tim-img img {
+      width: 300px;
+      height: 400px;
+      margin-left: 10px;
+    }
+
+    .Tim-text p {
+      margin-top: 30px;
+      width: 320px;
+    }
+
+    .Tim-text h5 {
+      display: none;
+    }
+  }
+
+  @media(max-width:1680px) {
+
+    .hero-text {
+      margin-left: 120px;
+    }
+
+    .hero-text h1 {
+      font-size: 50px;
+
+    }
+
+    .hero-text p {
+      font-size: 19px;
+      width: 420px;
+    }
+
+    .hero-image img {
+      margin-top: 70px;
+      width: 450px;
+      height: 320px;
+    }
+
+    .load-img img {
+      display: none;
+    }
+
+    .sign img {
+      width: 500px;
+      height: 400px;
+    }
+
+    .sign-text {
+      margin-top: 40px;
+    }
+
+    .sign-text h1 {
+      width: 600px;
+    }
+
+    .sign-text p {
+
+      width: 820px;
+    }
+
+    .Helping-text2 {
+      margin-top: 40px;
+    }
+
+    .Helping-text3 {
+      margin-top: 40px;
+    }
+
+    .market {
+      display: flex;
+    }
+
+
+    .lock img {
+      width: 500px;
+      height: 400px;
+    }
+
+    .lock-text {
+      margin-top: 30px;
+    }
+
+    .lock-text h1 {
+      width: 600px;
+    }
+
+    .lock-text p {
+      width: 820px;
+    }
+
+
+    .Tim-img img {
+      width: 300px;
+      height: 300px;
+    }
+
+    .Tim-text p {
+      width: 820px;
+    }
+
+    .Tim-text h5 {
+      display: none;
+    }
+  } 
+</style>
+
+<body>
+  <section class="nav-bar">
+    <nav class="navbar navbar-expand-lg  bg-body-tertiary px-4">
+      <div class="head">
+        <img src="images/Nexcent/Icon.png" alt="" id="icon">
+        <h1 class="logo" style="color: black;">Nexcent</h1>
+      </div>
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        style="color: black;">
+        <span class="navbar-toggler-icon" style="color:black;"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+          <li class="nav-item mx-3"><a class="nav-link" href="#" style="color: black;">Home</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="#" style="color: black; ">About Us</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="#" style="color: black;">Contact</a></li>
+          <li class="nav-item mx-3"><a class="nav-link" href="#" style="color: black;">Service</a></li>
+        </ul>
+        <button type="button" class="btn btn-success" id="register">Register Now<i
+            class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </nav>
+  </section>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Lessons and insights</h1>
+      <h1><span>from 8 years</span></h1><br>
+      <p>Where to grow your business as a photographer: site or social media?</p><br>
+      <button type="button" class="btn btn-success" id="btn-hero">Register Now</button>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/Nexcent/Illustration.png" alt="crypto" width=563px; height="470px">
+    </div>
+  </section>
+
+  <div class="load-img">
+    <img src="images/Nexcent/Dot.png" alt="">
+  </div>
+
+
+
+  <section class="our-client">
+    <h1>Our Clients</h1>
+    <p>We have been working with some Fortune 500+ clients</p>
+    <div class="clients-icon">
+      <img src="images/Nexcent/Logo (1).png" alt="">
+      <img src="images/Nexcent/Logo (2).png" alt="">
+      <img src="images/Nexcent/Logo (3).png" alt="">
+      <img src="images/Nexcent/Logo (4).png" alt="">
+      <img src="images/Nexcent/Logo (5).png" alt="">
+      <img src="images/Nexcent/Logo (6).png" alt="">
+      <img src="images/Nexcent/Logo (7).png" alt="">
+    </div>
+  </section> -
+
+
+  <section class="Manage">
+    <div class="Manage-contant">
+      <h1>Manage your entire community</h1>
+      <h1>in a single system</h1>
+      <p>Who is Nextcent suitable for?</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="images/Nexcent/Icon (1).png" alt="" width="80px" height="70px">
+        <h1>Membership Organisations</h1>
+        <p>Our membership management software provides full automation of membership renewals and payments</p>
+      </div>
+
+      <div class="card">
+        <img src="images/Nexcent/Icon (2).png" alt="" width="80px" height="70px">
+        <h1>Membership Organisations</h1>
+        <p>Our membership management software provides full automation of membership renewals and payments</p>
+      </div>
+
+      <div class="card">
+        <img src="images/Nexcent/Icon (3).png" alt="" width="80px" height="70px">
+        <h1>Membership Organisations</h1>
+        <p>Our membership management software provides full automation of membership renewals and payments</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="Pixelgrade">
+    <div class="sign">
+      <img src="images/Nexcent/rafiki.png" alt="">
+    </div>
+
+    <div class="sign-text">
+      <h1>The unseen of spending </h1>
+      <h1>years at Pixelgrade</h1>
+      <p id="sign-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est
+        varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam
+        pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
+        elementum pulvinar odio.</p>
+      <button type="button" class="btn btn-success">Register Now</button>
+    </div>
+  </section>
+
+  <section class="Helping">
+    <div class="Helping-text">
+      <h1>Helping a local </h1>
+      <h1><span>business reinvent itself</span></h1>
+      <p>We reached here with our hard work and dedication</p>
+    </div>
+
+    <div class="Helping-text2">
+      <div class="Member">
+        <img src="images/Nexcent/Icon (4).png" alt="">
+        <h1>2,245,341</h1>
+        <p>Members</p>
+      </div>
+
+      <div class="Member">
+        <img src="images/Nexcent/Icon (5).png" alt="">
+        <h1>2,245,341</h1>
+        <p>Clubs</p>
+      </div>
+    </div>
+    <div class="Helping-text3">
+      <div class="Member-1">
+        <img src="images/Nexcent/Icon (6).png" alt="">
+        <h1>2,245,341</h1>
+        <p>Event Bookings</p>
+      </div>
+
+      <div class="Member-1">
+        <img src="images/Nexcent/Icon (7).png" alt="">
+        <h1>2,245,341</h1>
+        <p>Payments</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-like">
+    <div class="lock">
+      <img src="images/Nexcent/pana.png" alt="">
+    </div>
+
+    <div class="lock-text">
+      <h1>The unseen of spending </h1>
+      <h1>years at Pixelgrade</h1>
+      <p id="lock-text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est
+        varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam
+        pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
+        elementum pulvinar odio.</p>
+      <button type="button" class="btn btn-success">Learn More</button>
+    </div>
+  </section>
+
+  <section class="Tim-smit">
+    <div class="Tim-img">
+      <img src="images/Nexcent/image 9.png" alt="">
+    </div>
+
+    <div class="Tim-text">
+      <p id="Tim-text-p">Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt
+        ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie
+        arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus
+        tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium.
+        Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio
+        neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
+      <h5><span>Smith</span></h5>
+      <p id="Tim-text-p">British Dragon Boat Racing Association</p>
+      <div class="clients-icon2">
+        <img src="images/Nexcent/Logo (1).png" alt="">
+        <img src="images/Nexcent/Logo (2).png" alt="">
+        <img src="images/Nexcent/Logo (3).png" alt="">
+        <img src="images/Nexcent/Logo (4).png" alt="">
+        <img src="images/Nexcent/Logo (5).png" alt="">
+        <img src="images/Nexcent/Logo (6).png" alt="">
+        <img src="images/Nexcent/Logo (7).png" alt="">
+        <h5><span>Meet all customers</span></h5>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Caring is the new marketing</h2>
+        <p>The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's
+          joining the community, read about how our community are increasing their membership income and lot's more.</p>
+      </div>
+
+      <div class="blog-grid">
+        <div class="blog-card">
+          <div class="image-container">
+            <img src="images/Nexcent/image 18.png" alt="">
+          </div>
+          <div class="card-content">
+            <h3>Creating Streamlined Safeguarding Processes with OneRen</h3>
+            <a href="#" class="read-more">Readmore &rarr;</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="image-container">
+            <img src="images/Nexcent/image 19.png" alt="">
+          </div>
+          <div class="card-content">
+            <h3>What are your safeguarding responsibilities and how can you manage them?</h3>
+            <a href="#" class="read-more">Readmore &rarr;</a>
+          </div>
+        </div>
+
+        <div class="blog-card">
+          <div class="image-container">
+            <img src="images/Nexcent/image 20.png" alt="">
+          </div>
+          <div class="card-content">
+            <h3>Revamping the Membership Model with Triathlon Australia can you manage</h3>
+            <a href="#" class="read-more">Readmore &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <h1>Pellentesque suscipit fringilla <br> libero eu.</h1>
+      <a href="#" class="btn-demo">
+        Get a Demo <span>&rarr;</span>
+      </a>
+    </div>
+  </section>
+
+
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <div class="logo">
+          <img src="images/Nexcent/Icon.png" alt="Nexcent">
+          <span>Nexcent</span>
+        </div>
+        <p>Copyright © 2020 Nexcent ltd.<br>All rights reserved</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-dribbble"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help center</a></li>
+          <li><a href="#">Terms of service</a></li>
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Stay up to date</h4>
+        <div class="newsletter">
+          <input type="email" placeholder="Your email address">
+          <button type="submit"><i class="far fa-paper-plane"></i></button>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
